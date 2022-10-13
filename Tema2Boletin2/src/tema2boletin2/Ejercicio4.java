@@ -6,25 +6,40 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 
-		//Doy el scanner y las variables necesarias
+		//Doy el scanner y las variables necesarias, Strings para la tirada uno y dos, e Int para la suma y el uno o dos.
 		String uno;
 		String dos;
 		int u;
 		int d;
 		int suma;
 		
+		//Pongo scanner
+		
 		Scanner all = new Scanner(System.in);
+		
+		//Pido al usuario lo que sacó en la primera jugada
 		
 		System.out.println("Introduce el número que sacó en la primera jugada");
 		
+		//Guardo el valor en la varible uno
+		
 		uno = all.nextLine();
+		
+		//Pido al usuario lo que sacó en la segunda jugada
 		
 		System.out.println("Introduce el número que sacó en la segunda jugada");
 		
+		//Guardo el valor en la varible dos
+		
 		dos = all.nextLine();
+		
+		//Swicth para la primera jugada o la variable uno
 		
 		switch (uno) {
 		
+		//Se pondrá en forma numérica el número que dijo el usuario en forma de letras del uno al seis,
+		//Si pone otro número, saldrá 0.
+				
 		case "uno":
 		u = 1;
 		break;
@@ -47,7 +62,11 @@ public class Ejercicio4 {
 		break;
 		}
 	
+		//Swicth para la segunda jugada o la variable dos
 		switch (dos) {
+				
+		//Se pondrá en forma numérica el número que dijo el usuario en forma de letras del uno al seis,
+		//Si pone otro número, saldrá 0.
 		
 		case "uno":
 		d = 1;
@@ -71,7 +90,11 @@ public class Ejercicio4 {
 		break;
 		}
 		
+		//La variable suma será la suma del valor de la primera jugada y la segunda
+		
 		suma= d + u;
+		
+		//Muestro el resultado
 		
 		System.out.println("La suma de las jugadas es; " + suma);
 		
