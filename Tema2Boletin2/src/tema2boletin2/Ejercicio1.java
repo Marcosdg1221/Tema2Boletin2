@@ -22,11 +22,17 @@ public class Ejercicio1 {
 
 		nota = all.nextInt();
 		
+		//Introduzco un switch, si la nota es del 1 al 4, la nota es insuficiente, un 5 es suficiente,
+		//un 6 es un bien, un 7 o 8 es notable y un 9 o 10 es sobresaliente.
+		
 		switch (nota) {
 		
 		case 1,2,3,4:
 			System.out.print("La nota es insuficiente");
 		break;
+				
+		//Con break impedimos que lea lo siguiente si se cumple la condición anterior.
+				
 		case 5:
 			System.out.print("La nota es suficiente");
 		break;
