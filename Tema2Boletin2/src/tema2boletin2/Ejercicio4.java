@@ -45,6 +45,7 @@ public class Ejercicio4 {
 		break;
 		case "dos":
 		u = 2;
+		break;
 		case "tres":
 		u = 3;
 		break;
