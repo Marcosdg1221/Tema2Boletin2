@@ -5,17 +5,29 @@ import java.util.*; //Importamos el java.util que necesitamos
 public class Ejercicio5 {
 	public static void main(String[] args) {
 
-		//Doy el scanner y las variables necesarias
+		//Doy el scanner y las variables necesarias, en este caso solo un string
+		
 		String carne;
 		
+		//Abro el scanner
+		
 		Scanner all = new Scanner(System.in);
+		
+		//Pido al usuario el carné
 
 		System.out.println("Introduce el carné de conducir, se enseñará a que corresponde");
 		
+		//Guardo el valor
+		
 		carne = all.nextLine();
+		
+		//Switch para el carné
 		
 		switch(carne) {
 			
+		//Si puso E, carne será remolques, si es D, autobuses, de C1 a C5, camiones, A será motocicletas, B1 o B2
+		//es automóviles, y en otro caso carne tomará el valor "no".
+				
 		case "E":
 		carne = "remolques";
 		break;
@@ -49,7 +61,9 @@ public class Ejercicio5 {
 		carne = "no";
 		break;
 		}
-	
+		
+		//Si carne es "no", muestro categoría no contemplada al usuario, en caso contrario mostrará la categoría
+		
 		if (carne == "no") {
 			System.out.println("Categoría no contemplada");
 			
